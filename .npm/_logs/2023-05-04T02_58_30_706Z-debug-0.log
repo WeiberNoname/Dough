@@ -1,0 +1,390 @@
+0 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', '-g', 'pug-cli' ]
+1 info using npm@8.5.1
+2 info using node@v12.22.9
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 1ms
+5 timing config:load:file:/usr/share/nodejs/npm/npmrc Completed in 4ms
+6 timing config:load:builtin Completed in 4ms
+7 timing config:load:cli Completed in 3ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:project Completed in 4ms
+10 timing config:load:file:/home/alien/.npmrc Completed in 0ms
+11 timing config:load:user Completed in 1ms
+12 timing config:load:file:/etc/npmrc Completed in 1ms
+13 timing config:load:global Completed in 1ms
+14 timing config:load:validate Completed in 0ms
+15 timing config:load:credentials Completed in 0ms
+16 timing config:load:setEnvs Completed in 0ms
+17 timing config:load Completed in 15ms
+18 timing npm:load:configload Completed in 16ms
+19 timing npm:load:setTitle Completed in 0ms
+20 timing config:load:flatten Completed in 2ms
+21 timing npm:load:display Completed in 3ms
+22 verbose logfile /home/alien/.npm/_logs/2023-05-04T02_58_30_706Z-debug-0.log
+23 timing npm:load:logFile Completed in 5ms
+24 timing npm:load:timers Completed in 0ms
+25 timing npm:load:configScope Completed in 0ms
+26 timing npm:load Completed in 26ms
+27 timing arborist:ctor Completed in 1ms
+28 timing idealTree:init Completed in 10ms
+29 timing idealTree:userRequests Completed in 3ms
+30 silly idealTree buildDeps
+31 silly fetch manifest pug-cli@*
+32 http fetch GET 200 https://registry.npmjs.org/pug-cli 1033ms (cache miss)
+33 silly placeDep ROOT pug-cli@1.0.0-alpha6 OK for:  want: *
+34 silly fetch manifest chalk@^1.0.0
+35 silly fetch manifest commander@^2.8.1
+36 silly fetch manifest pug@^2.0.0-alpha7
+37 silly fetch manifest mkdirp@^0.5.1
+38 http fetch GET 200 https://registry.npmjs.org/chalk 62ms (cache miss)
+39 http fetch GET 200 https://registry.npmjs.org/pug 114ms (cache miss)
+40 http fetch GET 200 https://registry.npmjs.org/mkdirp 118ms (cache miss)
+41 http fetch GET 200 https://registry.npmjs.org/commander 129ms (cache miss)
+42 timing idealTree:#root Completed in 1178ms
+43 silly placeDep node_modules/pug-cli chalk@1.1.3 OK for: pug-cli@1.0.0-alpha6 want: ^1.0.0
+44 silly placeDep node_modules/pug-cli commander@2.20.3 OK for: pug-cli@1.0.0-alpha6 want: ^2.8.1
+45 silly placeDep node_modules/pug-cli mkdirp@0.5.6 OK for: pug-cli@1.0.0-alpha6 want: ^0.5.1
+46 silly placeDep node_modules/pug-cli pug@2.0.4 OK for: pug-cli@1.0.0-alpha6 want: ^2.0.0-alpha7
+47 silly fetch manifest ansi-styles@^2.2.1
+48 silly fetch manifest escape-string-regexp@^1.0.2
+49 silly fetch manifest has-ansi@^2.0.0
+50 silly fetch manifest strip-ansi@^3.0.0
+51 silly fetch manifest supports-color@^2.0.0
+52 silly fetch manifest minimist@^1.2.6
+53 silly fetch manifest pug-code-gen@^2.0.2
+54 silly fetch manifest pug-filters@^3.1.1
+55 silly fetch manifest pug-lexer@^4.1.0
+56 silly fetch manifest pug-linker@^3.0.6
+57 silly fetch manifest pug-load@^2.0.12
+58 silly fetch manifest pug-parser@^5.0.1
+59 silly fetch manifest pug-runtime@^2.0.5
+60 silly fetch manifest pug-strip-comments@^1.0.4
+61 http fetch GET 200 https://registry.npmjs.org/ansi-styles 96ms (cache miss)
+62 http fetch GET 200 https://registry.npmjs.org/strip-ansi 95ms (cache miss)
+63 http fetch GET 200 https://registry.npmjs.org/escape-string-regexp 98ms (cache miss)
+64 http fetch GET 200 https://registry.npmjs.org/has-ansi 97ms (cache miss)
+65 http fetch GET 200 https://registry.npmjs.org/pug-linker 159ms (cache miss)
+66 http fetch GET 200 https://registry.npmjs.org/pug-load 160ms (cache miss)
+67 http fetch GET 200 https://registry.npmjs.org/pug-strip-comments 158ms (cache miss)
+68 http fetch GET 200 https://registry.npmjs.org/pug-code-gen 166ms (cache miss)
+69 http fetch GET 200 https://registry.npmjs.org/pug-runtime 160ms (cache miss)
+70 http fetch GET 200 https://registry.npmjs.org/pug-parser 162ms (cache miss)
+71 http fetch GET 200 https://registry.npmjs.org/pug-lexer 166ms (cache miss)
+72 http fetch GET 200 https://registry.npmjs.org/pug-filters 167ms (cache miss)
+73 http fetch GET 200 https://registry.npmjs.org/minimist 173ms (cache miss)
+74 http fetch GET 200 https://registry.npmjs.org/supports-color 178ms (cache miss)
+75 timing idealTree:node_modules/pug-cli Completed in 193ms
+76 silly placeDep node_modules/pug-cli ansi-styles@2.2.1 OK for: chalk@1.1.3 want: ^2.2.1
+77 silly placeDep node_modules/pug-cli escape-string-regexp@1.0.5 OK for: chalk@1.1.3 want: ^1.0.2
+78 silly placeDep node_modules/pug-cli has-ansi@2.0.0 OK for: chalk@1.1.3 want: ^2.0.0
+79 silly placeDep node_modules/pug-cli strip-ansi@3.0.1 OK for: chalk@1.1.3 want: ^3.0.0
+80 silly placeDep node_modules/pug-cli supports-color@2.0.0 OK for: chalk@1.1.3 want: ^2.0.0
+81 silly fetch manifest ansi-regex@^2.0.0
+82 http fetch GET 200 https://registry.npmjs.org/ansi-regex 43ms (cache miss)
+83 timing idealTree:node_modules/pug-cli/node_modules/chalk Completed in 54ms
+84 timing idealTree:node_modules/pug-cli/node_modules/ansi-styles Completed in 0ms
+85 timing idealTree:node_modules/pug-cli/node_modules/commander Completed in 0ms
+86 timing idealTree:node_modules/pug-cli/node_modules/escape-string-regexp Completed in 0ms
+87 silly placeDep node_modules/pug-cli ansi-regex@2.1.1 OK for: has-ansi@2.0.0 want: ^2.0.0
+88 timing idealTree:node_modules/pug-cli/node_modules/has-ansi Completed in 2ms
+89 timing idealTree:node_modules/pug-cli/node_modules/ansi-regex Completed in 0ms
+90 silly placeDep node_modules/pug-cli minimist@1.2.8 OK for: mkdirp@0.5.6 want: ^1.2.6
+91 timing idealTree:node_modules/pug-cli/node_modules/mkdirp Completed in 1ms
+92 timing idealTree:node_modules/pug-cli/node_modules/minimist Completed in 0ms
+93 silly placeDep node_modules/pug-cli pug-code-gen@2.0.3 OK for: pug@2.0.4 want: ^2.0.2
+94 silly placeDep node_modules/pug-cli pug-filters@3.1.1 OK for: pug@2.0.4 want: ^3.1.1
+95 silly placeDep node_modules/pug-cli pug-lexer@4.1.0 OK for: pug@2.0.4 want: ^4.1.0
+96 silly placeDep node_modules/pug-cli pug-linker@3.0.6 OK for: pug@2.0.4 want: ^3.0.6
+97 silly placeDep node_modules/pug-cli pug-load@2.0.12 OK for: pug@2.0.4 want: ^2.0.12
+98 silly placeDep node_modules/pug-cli pug-parser@5.0.1 OK for: pug@2.0.4 want: ^5.0.1
+99 silly placeDep node_modules/pug-cli pug-runtime@2.0.5 OK for: pug@2.0.4 want: ^2.0.5
+100 silly placeDep node_modules/pug-cli pug-strip-comments@1.0.4 OK for: pug@2.0.4 want: ^1.0.4
+101 silly fetch manifest constantinople@^3.1.2
+102 silly fetch manifest doctypes@^1.1.0
+103 silly fetch manifest js-stringify@^1.0.1
+104 silly fetch manifest pug-attrs@^2.0.4
+105 silly fetch manifest pug-error@^1.3.3
+106 silly fetch manifest void-elements@^2.0.1
+107 silly fetch manifest with@^5.0.0
+108 silly fetch manifest clean-css@^4.1.11
+109 silly fetch manifest constantinople@^3.0.1
+110 silly fetch manifest jstransformer@1.0.0
+111 silly fetch manifest pug-walk@^1.1.8
+112 silly fetch manifest resolve@^1.1.6
+113 silly fetch manifest uglify-js@^2.6.1
+114 silly fetch manifest character-parser@^2.1.1
+115 silly fetch manifest is-expression@^3.0.0
+116 silly fetch manifest object-assign@^4.1.0
+117 silly fetch manifest token-stream@0.0.1
+118 http fetch GET 200 https://registry.npmjs.org/constantinople 118ms (cache miss)
+119 http fetch GET 200 https://registry.npmjs.org/is-expression 109ms (cache miss)
+120 http fetch GET 200 https://registry.npmjs.org/js-stringify 119ms (cache miss)
+121 http fetch GET 200 https://registry.npmjs.org/doctypes 120ms (cache miss)
+122 http fetch GET 200 https://registry.npmjs.org/pug-attrs 120ms (cache miss)
+123 http fetch GET 200 https://registry.npmjs.org/pug-walk 116ms (cache miss)
+124 http fetch GET 200 https://registry.npmjs.org/with 122ms (cache miss)
+125 http fetch GET 200 https://registry.npmjs.org/character-parser 119ms (cache miss)
+126 http fetch GET 200 https://registry.npmjs.org/void-elements 125ms (cache miss)
+127 http fetch GET 200 https://registry.npmjs.org/jstransformer 123ms (cache miss)
+128 http fetch GET 200 https://registry.npmjs.org/pug-error 129ms (cache miss)
+129 http fetch GET 200 https://registry.npmjs.org/token-stream 121ms (cache miss)
+130 http fetch GET 200 https://registry.npmjs.org/resolve 129ms (cache miss)
+131 http fetch GET 200 https://registry.npmjs.org/object-assign 140ms (cache miss)
+132 http fetch GET 200 https://registry.npmjs.org/uglify-js 145ms (cache miss)
+133 http fetch GET 200 https://registry.npmjs.org/clean-css 159ms (cache miss)
+134 timing idealTree:node_modules/pug-cli/node_modules/pug Completed in 181ms
+135 silly placeDep node_modules/pug-cli constantinople@3.1.2 OK for: pug-code-gen@2.0.3 want: ^3.1.2
+136 silly placeDep node_modules/pug-cli doctypes@1.1.0 OK for: pug-code-gen@2.0.3 want: ^1.1.0
+137 silly placeDep node_modules/pug-cli js-stringify@1.0.2 OK for: pug-code-gen@2.0.3 want: ^1.0.1
+138 silly placeDep node_modules/pug-cli pug-attrs@2.0.4 OK for: pug-code-gen@2.0.3 want: ^2.0.4
+139 silly placeDep node_modules/pug-cli pug-error@1.3.3 OK for: pug-code-gen@2.0.3 want: ^1.3.3
+140 silly placeDep node_modules/pug-cli void-elements@2.0.1 OK for: pug-code-gen@2.0.3 want: ^2.0.1
+141 silly placeDep node_modules/pug-cli with@5.1.1 OK for: pug-code-gen@2.0.3 want: ^5.0.0
+142 silly fetch manifest @types/babel-types@^7.0.0
+143 silly fetch manifest @types/babylon@^6.16.2
+144 silly fetch manifest babel-types@^6.26.0
+145 silly fetch manifest babylon@^6.18.0
+146 silly fetch manifest acorn@^3.1.0
+147 silly fetch manifest acorn-globals@^3.0.0
+148 http fetch GET 200 https://registry.npmjs.org/acorn-globals 68ms (cache miss)
+149 http fetch GET 200 https://registry.npmjs.org/babel-types 78ms (cache miss)
+150 http fetch GET 200 https://registry.npmjs.org/@types%2fbabylon 81ms (cache miss)
+151 http fetch GET 200 https://registry.npmjs.org/@types%2fbabel-types 86ms (cache miss)
+152 http fetch GET 200 https://registry.npmjs.org/acorn 85ms (cache miss)
+153 http fetch GET 200 https://registry.npmjs.org/babylon 93ms (cache miss)
+154 timing idealTree:node_modules/pug-cli/node_modules/pug-code-gen Completed in 112ms
+155 silly placeDep node_modules/pug-cli @types/babel-types@7.0.11 OK for: constantinople@3.1.2 want: ^7.0.0
+156 silly placeDep node_modules/pug-cli @types/babylon@6.16.6 OK for: constantinople@3.1.2 want: ^6.16.2
+157 silly placeDep node_modules/pug-cli babel-types@6.26.0 OK for: constantinople@3.1.2 want: ^6.26.0
+158 silly placeDep node_modules/pug-cli babylon@6.18.0 OK for: constantinople@3.1.2 want: ^6.18.0
+159 silly fetch manifest babel-runtime@^6.26.0
+160 silly fetch manifest esutils@^2.0.2
+161 silly fetch manifest lodash@^4.17.4
+162 silly fetch manifest to-fast-properties@^1.0.3
+163 http fetch GET 200 https://registry.npmjs.org/to-fast-properties 48ms (cache miss)
+164 http fetch GET 200 https://registry.npmjs.org/esutils 56ms (cache miss)
+165 http fetch GET 200 https://registry.npmjs.org/babel-runtime 66ms (cache miss)
+166 http fetch GET 200 https://registry.npmjs.org/lodash 70ms (cache miss)
+167 timing idealTree:node_modules/pug-cli/node_modules/constantinople Completed in 78ms
+168 timing idealTree:node_modules/pug-cli/node_modules/@types/babel-types Completed in 0ms
+169 timing idealTree:node_modules/pug-cli/node_modules/@types/babylon Completed in 0ms
+170 silly placeDep node_modules/pug-cli babel-runtime@6.26.0 OK for: babel-types@6.26.0 want: ^6.26.0
+171 silly placeDep node_modules/pug-cli esutils@2.0.3 OK for: babel-types@6.26.0 want: ^2.0.2
+172 silly placeDep node_modules/pug-cli lodash@4.17.21 OK for: babel-types@6.26.0 want: ^4.17.4
+173 silly placeDep node_modules/pug-cli to-fast-properties@1.0.3 OK for: babel-types@6.26.0 want: ^1.0.3
+174 silly fetch manifest core-js@^2.4.0
+175 silly fetch manifest regenerator-runtime@^0.11.0
+176 http fetch GET 200 https://registry.npmjs.org/regenerator-runtime 53ms (cache miss)
+177 http fetch GET 200 https://registry.npmjs.org/core-js 101ms (cache miss)
+178 timing idealTree:node_modules/pug-cli/node_modules/babel-types Completed in 113ms
+179 silly placeDep node_modules/pug-cli core-js@2.6.12 OK for: babel-runtime@6.26.0 want: ^2.4.0
+180 silly placeDep node_modules/pug-cli regenerator-runtime@0.11.1 OK for: babel-runtime@6.26.0 want: ^0.11.0
+181 timing idealTree:node_modules/pug-cli/node_modules/babel-runtime Completed in 2ms
+182 timing idealTree:node_modules/pug-cli/node_modules/babylon Completed in 0ms
+183 timing idealTree:node_modules/pug-cli/node_modules/core-js Completed in 0ms
+184 timing idealTree:node_modules/pug-cli/node_modules/doctypes Completed in 0ms
+185 timing idealTree:node_modules/pug-cli/node_modules/esutils Completed in 0ms
+186 timing idealTree:node_modules/pug-cli/node_modules/js-stringify Completed in 0ms
+187 timing idealTree:node_modules/pug-cli/node_modules/lodash Completed in 0ms
+188 timing idealTree:node_modules/pug-cli/node_modules/pug-attrs Completed in 0ms
+189 timing idealTree:node_modules/pug-cli/node_modules/pug-error Completed in 0ms
+190 silly placeDep node_modules/pug-cli clean-css@4.2.4 OK for: pug-filters@3.1.1 want: ^4.1.11
+191 silly placeDep node_modules/pug-cli jstransformer@1.0.0 OK for: pug-filters@3.1.1 want: 1.0.0
+192 silly placeDep node_modules/pug-cli pug-walk@1.1.8 OK for: pug-filters@3.1.1 want: ^1.1.8
+193 silly placeDep node_modules/pug-cli resolve@1.22.2 OK for: pug-filters@3.1.1 want: ^1.1.6
+194 silly placeDep node_modules/pug-cli uglify-js@2.8.29 OK for: pug-filters@3.1.1 want: ^2.6.1
+195 silly fetch manifest source-map@~0.6.0
+196 silly fetch manifest is-promise@^2.0.0
+197 silly fetch manifest promise@^7.0.1
+198 silly fetch manifest is-core-module@^2.11.0
+199 silly fetch manifest path-parse@^1.0.7
+200 silly fetch manifest supports-preserve-symlinks-flag@^1.0.0
+201 silly fetch manifest source-map@~0.5.1
+202 silly fetch manifest yargs@~3.10.0
+203 silly fetch manifest uglify-to-browserify@~1.0.0
+204 http fetch GET 200 https://registry.npmjs.org/supports-preserve-symlinks-flag 82ms (cache miss)
+205 http fetch GET 200 https://registry.npmjs.org/is-promise 85ms (cache miss)
+206 http fetch GET 200 https://registry.npmjs.org/promise 86ms (cache miss)
+207 http fetch GET 200 https://registry.npmjs.org/path-parse 85ms (cache miss)
+208 http fetch GET 200 https://registry.npmjs.org/is-core-module 87ms (cache miss)
+209 http fetch GET 200 https://registry.npmjs.org/uglify-to-browserify 85ms (cache miss)
+210 http fetch GET 200 https://registry.npmjs.org/source-map 91ms (cache miss)
+211 http fetch GET 200 https://registry.npmjs.org/yargs 107ms (cache miss)
+212 timing idealTree:node_modules/pug-cli/node_modules/pug-filters Completed in 122ms
+213 silly placeDep node_modules/pug-cli source-map@0.6.1 OK for: clean-css@4.2.4 want: ~0.6.0
+214 timing idealTree:node_modules/pug-cli/node_modules/clean-css Completed in 2ms
+215 silly placeDep node_modules/pug-cli is-promise@2.2.2 OK for: jstransformer@1.0.0 want: ^2.0.0
+216 silly placeDep node_modules/pug-cli promise@7.3.1 OK for: jstransformer@1.0.0 want: ^7.0.1
+217 silly fetch manifest asap@~2.0.3
+218 http fetch GET 200 https://registry.npmjs.org/asap 41ms (cache miss)
+219 timing idealTree:node_modules/pug-cli/node_modules/jstransformer Completed in 43ms
+220 timing idealTree:node_modules/pug-cli/node_modules/is-promise Completed in 0ms
+221 silly placeDep node_modules/pug-cli asap@2.0.6 OK for: promise@7.3.1 want: ~2.0.3
+222 timing idealTree:node_modules/pug-cli/node_modules/promise Completed in 1ms
+223 timing idealTree:node_modules/pug-cli/node_modules/asap Completed in 0ms
+224 silly placeDep node_modules/pug-cli character-parser@2.2.0 OK for: pug-lexer@4.1.0 want: ^2.1.1
+225 silly placeDep node_modules/pug-cli is-expression@3.0.0 OK for: pug-lexer@4.1.0 want: ^3.0.0
+226 silly fetch manifest is-regex@^1.0.3
+227 silly fetch manifest acorn@~4.0.2
+228 silly fetch manifest object-assign@^4.0.1
+229 http fetch GET 200 https://registry.npmjs.org/is-regex 46ms (cache miss)
+230 timing idealTree:node_modules/pug-cli/node_modules/pug-lexer Completed in 49ms
+231 silly placeDep node_modules/pug-cli is-regex@1.1.4 OK for: character-parser@2.2.0 want: ^1.0.3
+232 silly fetch manifest call-bind@^1.0.2
+233 silly fetch manifest has-tostringtag@^1.0.0
+234 http fetch GET 200 https://registry.npmjs.org/call-bind 45ms (cache miss)
+235 http fetch GET 200 https://registry.npmjs.org/has-tostringtag 48ms (cache miss)
+236 timing idealTree:node_modules/pug-cli/node_modules/character-parser Completed in 51ms
+237 silly placeDep node_modules/pug-cli acorn@4.0.13 OK for: is-expression@3.0.0 want: ~4.0.2
+238 silly placeDep node_modules/pug-cli object-assign@4.1.1 OK for: is-expression@3.0.0 want: ^4.0.1
+239 timing idealTree:node_modules/pug-cli/node_modules/is-expression Completed in 6ms
+240 timing idealTree:node_modules/pug-cli/node_modules/acorn Completed in 0ms
+241 silly placeDep node_modules/pug-cli call-bind@1.0.2 OK for: is-regex@1.1.4 want: ^1.0.2
+242 silly placeDep node_modules/pug-cli has-tostringtag@1.0.0 OK for: is-regex@1.1.4 want: ^1.0.0
+243 silly fetch manifest function-bind@^1.1.1
+244 silly fetch manifest get-intrinsic@^1.0.2
+245 silly fetch manifest has-symbols@^1.0.2
+246 http fetch GET 200 https://registry.npmjs.org/get-intrinsic 50ms (cache miss)
+247 http fetch GET 200 https://registry.npmjs.org/has-symbols 51ms (cache miss)
+248 http fetch GET 200 https://registry.npmjs.org/function-bind 52ms (cache miss)
+249 timing idealTree:node_modules/pug-cli/node_modules/is-regex Completed in 56ms
+250 silly placeDep node_modules/pug-cli function-bind@1.1.1 OK for: call-bind@1.0.2 want: ^1.1.1
+251 silly placeDep node_modules/pug-cli get-intrinsic@1.2.0 OK for: call-bind@1.0.2 want: ^1.0.2
+252 silly fetch manifest has@^1.0.3
+253 silly fetch manifest has-symbols@^1.0.3
+254 http fetch GET 200 https://registry.npmjs.org/has 40ms (cache miss)
+255 timing idealTree:node_modules/pug-cli/node_modules/call-bind Completed in 48ms
+256 timing idealTree:node_modules/pug-cli/node_modules/function-bind Completed in 0ms
+257 silly placeDep node_modules/pug-cli has@1.0.3 OK for: get-intrinsic@1.2.0 want: ^1.0.3
+258 silly placeDep node_modules/pug-cli has-symbols@1.0.3 OK for: get-intrinsic@1.2.0 want: ^1.0.3
+259 timing idealTree:node_modules/pug-cli/node_modules/get-intrinsic Completed in 4ms
+260 timing idealTree:node_modules/pug-cli/node_modules/has Completed in 0ms
+261 timing idealTree:node_modules/pug-cli/node_modules/has-symbols Completed in 0ms
+262 timing idealTree:node_modules/pug-cli/node_modules/has-tostringtag Completed in 0ms
+263 timing idealTree:node_modules/pug-cli/node_modules/object-assign Completed in 0ms
+264 timing idealTree:node_modules/pug-cli/node_modules/pug-linker Completed in 0ms
+265 timing idealTree:node_modules/pug-cli/node_modules/pug-load Completed in 0ms
+266 silly placeDep node_modules/pug-cli token-stream@0.0.1 OK for: pug-parser@5.0.1 want: 0.0.1
+267 timing idealTree:node_modules/pug-cli/node_modules/pug-parser Completed in 1ms
+268 timing idealTree:node_modules/pug-cli/node_modules/pug-runtime Completed in 1ms
+269 timing idealTree:node_modules/pug-cli/node_modules/pug-strip-comments Completed in 0ms
+270 timing idealTree:node_modules/pug-cli/node_modules/pug-walk Completed in 0ms
+271 timing idealTree:node_modules/pug-cli/node_modules/regenerator-runtime Completed in 0ms
+272 silly placeDep node_modules/pug-cli is-core-module@2.12.0 OK for: resolve@1.22.2 want: ^2.11.0
+273 silly placeDep node_modules/pug-cli path-parse@1.0.7 OK for: resolve@1.22.2 want: ^1.0.7
+274 silly placeDep node_modules/pug-cli supports-preserve-symlinks-flag@1.0.0 OK for: resolve@1.22.2 want: ^1.0.0
+275 timing idealTree:node_modules/pug-cli/node_modules/resolve Completed in 3ms
+276 timing idealTree:node_modules/pug-cli/node_modules/is-core-module Completed in 0ms
+277 timing idealTree:node_modules/pug-cli/node_modules/path-parse Completed in 0ms
+278 timing idealTree:node_modules/pug-cli/node_modules/source-map Completed in 0ms
+279 timing idealTree:node_modules/pug-cli/node_modules/strip-ansi Completed in 0ms
+280 timing idealTree:node_modules/pug-cli/node_modules/supports-color Completed in 0ms
+281 timing idealTree:node_modules/pug-cli/node_modules/supports-preserve-symlinks-flag Completed in 0ms
+282 timing idealTree:node_modules/pug-cli/node_modules/to-fast-properties Completed in 0ms
+283 timing idealTree:node_modules/pug-cli/node_modules/token-stream Completed in 0ms
+284 silly placeDep node_modules/pug-cli/node_modules/uglify-js source-map@0.5.7 OK for: uglify-js@2.8.29 want: ~0.5.1
+285 silly placeDep node_modules/pug-cli uglify-to-browserify@1.0.2 OK for: uglify-js@2.8.29 want: ~1.0.0
+286 silly placeDep node_modules/pug-cli yargs@3.10.0 OK for: uglify-js@2.8.29 want: ~3.10.0
+287 silly fetch manifest camelcase@^1.0.2
+288 silly fetch manifest cliui@^2.1.0
+289 silly fetch manifest decamelize@^1.0.0
+290 silly fetch manifest window-size@0.1.0
+291 http fetch GET 200 https://registry.npmjs.org/camelcase 60ms (cache miss)
+292 http fetch GET 200 https://registry.npmjs.org/cliui 60ms (cache miss)
+293 http fetch GET 200 https://registry.npmjs.org/decamelize 61ms (cache miss)
+294 http fetch GET 200 https://registry.npmjs.org/window-size 61ms (cache miss)
+295 timing idealTree:node_modules/pug-cli/node_modules/uglify-js Completed in 70ms
+296 timing idealTree:node_modules/pug-cli/node_modules/uglify-to-browserify Completed in 0ms
+297 timing idealTree:node_modules/pug-cli/node_modules/void-elements Completed in 0ms
+298 silly placeDep node_modules/pug-cli/node_modules/with acorn@3.3.0 OK for: with@5.1.1 want: ^3.1.0
+299 silly placeDep node_modules/pug-cli acorn-globals@3.1.0 OK for: with@5.1.1 want: ^3.0.0
+300 timing idealTree:node_modules/pug-cli/node_modules/with Completed in 3ms
+301 timing idealTree:node_modules/pug-cli/node_modules/acorn-globals Completed in 0ms
+302 silly placeDep node_modules/pug-cli camelcase@1.2.1 OK for: yargs@3.10.0 want: ^1.0.2
+303 silly placeDep node_modules/pug-cli cliui@2.1.0 OK for: yargs@3.10.0 want: ^2.1.0
+304 silly placeDep node_modules/pug-cli decamelize@1.2.0 OK for: yargs@3.10.0 want: ^1.0.0
+305 silly placeDep node_modules/pug-cli window-size@0.1.0 OK for: yargs@3.10.0 want: 0.1.0
+306 silly fetch manifest center-align@^0.1.1
+307 silly fetch manifest right-align@^0.1.1
+308 silly fetch manifest wordwrap@0.0.2
+309 http fetch GET 200 https://registry.npmjs.org/wordwrap 50ms (cache miss)
+310 http fetch GET 200 https://registry.npmjs.org/center-align 54ms (cache miss)
+311 http fetch GET 200 https://registry.npmjs.org/right-align 54ms (cache miss)
+312 timing idealTree:node_modules/pug-cli/node_modules/yargs Completed in 60ms
+313 timing idealTree:node_modules/pug-cli/node_modules/camelcase Completed in 0ms
+314 silly placeDep node_modules/pug-cli center-align@0.1.3 OK for: cliui@2.1.0 want: ^0.1.1
+315 silly placeDep node_modules/pug-cli right-align@0.1.3 OK for: cliui@2.1.0 want: ^0.1.1
+316 silly placeDep node_modules/pug-cli wordwrap@0.0.2 OK for: cliui@2.1.0 want: 0.0.2
+317 silly fetch manifest align-text@^0.1.3
+318 silly fetch manifest lazy-cache@^1.0.3
+319 silly fetch manifest align-text@^0.1.1
+320 http fetch GET 200 https://registry.npmjs.org/lazy-cache 46ms (cache miss)
+321 http fetch GET 200 https://registry.npmjs.org/align-text 47ms (cache miss)
+322 timing idealTree:node_modules/pug-cli/node_modules/cliui Completed in 52ms
+323 silly placeDep node_modules/pug-cli align-text@0.1.4 OK for: center-align@0.1.3 want: ^0.1.3
+324 silly placeDep node_modules/pug-cli lazy-cache@1.0.4 OK for: center-align@0.1.3 want: ^1.0.3
+325 silly fetch manifest kind-of@^3.0.2
+326 silly fetch manifest longest@^1.0.1
+327 silly fetch manifest repeat-string@^1.5.2
+328 http fetch GET 200 https://registry.npmjs.org/longest 49ms (cache miss)
+329 http fetch GET 200 https://registry.npmjs.org/repeat-string 76ms (cache miss)
+330 http fetch GET 200 https://registry.npmjs.org/kind-of 78ms (cache miss)
+331 timing idealTree:node_modules/pug-cli/node_modules/center-align Completed in 81ms
+332 silly placeDep node_modules/pug-cli kind-of@3.2.2 OK for: align-text@0.1.4 want: ^3.0.2
+333 silly placeDep node_modules/pug-cli longest@1.0.1 OK for: align-text@0.1.4 want: ^1.0.1
+334 silly placeDep node_modules/pug-cli repeat-string@1.6.1 OK for: align-text@0.1.4 want: ^1.5.2
+335 silly fetch manifest is-buffer@^1.1.5
+336 http fetch GET 200 https://registry.npmjs.org/is-buffer 45ms (cache miss)
+337 timing idealTree:node_modules/pug-cli/node_modules/align-text Completed in 49ms
+338 timing idealTree:node_modules/pug-cli/node_modules/decamelize Completed in 0ms
+339 silly placeDep node_modules/pug-cli is-buffer@1.1.6 OK for: kind-of@3.2.2 want: ^1.1.5
+340 timing idealTree:node_modules/pug-cli/node_modules/kind-of Completed in 2ms
+341 timing idealTree:node_modules/pug-cli/node_modules/is-buffer Completed in 0ms
+342 timing idealTree:node_modules/pug-cli/node_modules/lazy-cache Completed in 0ms
+343 timing idealTree:node_modules/pug-cli/node_modules/longest Completed in 0ms
+344 timing idealTree:node_modules/pug-cli/node_modules/repeat-string Completed in 0ms
+345 timing idealTree:node_modules/pug-cli/node_modules/right-align Completed in 0ms
+346 timing idealTree:node_modules/pug-cli/node_modules/window-size Completed in 0ms
+347 timing idealTree:node_modules/pug-cli/node_modules/wordwrap Completed in 0ms
+348 timing idealTree:node_modules/pug-cli/node_modules/uglify-js/node_modules/source-map Completed in 0ms
+349 timing idealTree:node_modules/pug-cli/node_modules/with/node_modules/acorn Completed in 0ms
+350 timing idealTree:buildDeps Completed in 2630ms
+351 timing idealTree:fixDepFlags Completed in 2ms
+352 timing idealTree Completed in 2645ms
+353 timing reify:loadTrees Completed in 2648ms
+354 timing reify:diffTrees Completed in 2ms
+355 silly reify moves {}
+356 timing reify:retireShallow Completed in 1ms
+357 timing reify:rollback:createSparse Completed in 0ms
+358 timing reify:rollback:retireShallow Completed in 0ms
+359 timing command:install Completed in 2723ms
+360 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules'
+361 verbose cwd /var/www/Weiber0.com
+362 verbose Linux 5.10.16.3-microsoft-standard-WSL2
+363 verbose argv "/usr/bin/node" "/usr/bin/npm" "install" "-g" "pug-cli"
+364 verbose node v12.22.9
+365 verbose npm  v8.5.1
+366 error code EACCES
+367 error syscall mkdir
+368 error path /usr/local/lib/node_modules
+369 error errno -13
+370 error [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules'] {
+370 error   errno: -13,
+370 error   code: 'EACCES',
+370 error   syscall: 'mkdir',
+370 error   path: '/usr/local/lib/node_modules'
+370 error }
+371 error
+371 error The operation was rejected by your operating system.
+371 error It is likely you do not have the permissions to access this file as the current user
+371 error
+371 error If you believe this might be a permissions issue, please double-check the
+371 error permissions of the file and its containing directories, or try running
+371 error the command again as root/Administrator.
+372 verbose exit -13
+373 timing npm Completed in 2920ms
+374 verbose unfinished npm timer reify 1683169110899
+375 verbose unfinished npm timer reify:createSparse 1683169113565
+376 verbose code -13
+377 error A complete log of this run can be found in:
+377 error     /home/alien/.npm/_logs/2023-05-04T02_58_30_706Z-debug-0.log

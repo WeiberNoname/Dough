@@ -1,0 +1,10 @@
+int
+the
+go
+
+
+./c
+gcc -o c c.c -lSDL2 -lSDL2_image
+gcc -0 c c.c -lSDL2 -lSDl_image
+gcc -o c c.c -lSDL2 -lSDL_image
+

@@ -1,0 +1,6 @@
+Package: hello
+Version: 1.0
+Architecture: amd64
+Maintainer: Your Name <you@example.com>
+Description: A simple program that prints "Hello, world!"
+Depends: libc6 (>= 2.27)
